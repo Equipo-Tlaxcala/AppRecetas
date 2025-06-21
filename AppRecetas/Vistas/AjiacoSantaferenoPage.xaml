@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRecetas.Vistas.AjiacoSantaferenoPage"
+             Title="Receta de Ajiaco Santafereño"
+             BackgroundColor="#FFE0B2">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20" BackgroundColor="White" Margin="20"  >
+
+            <!-- TÍTULO -->
+            <Label Text="🥘 Ajiaco SantafereñO"
+                   FontSize="34"
+                   FontAttributes="Bold"
+                   FontFamily="Cursive"
+                   TextColor="#BF360C"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10,0,0"/>
+
+            <!-- DESCRIPCIÓN -->
+            <Frame BackgroundColor="#FFF3E0" CornerRadius="15" Padding="15">
+                <Label Text="Sopa tradicional de Bogotá elaborada con papas criollas, mazorca y pollo, con el toque especial de las guascas. Rica, espesa y perfecta para días fríos."
+                       FontSize="16"
+                       TextColor="#5D4037"
+                       HorizontalTextAlignment="Start" />
+            </Frame>
+
+            <!-- INGREDIENTES -->
+            <Frame BackgroundColor="#FFE082" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="📝 Ingredientes:"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           TextColor="#4E342E"
+                           Margin="0,0,0,10"/>
+
+                    <Label Text="• 3 pechugas de pollo" TextColor="Black" />
+                    <Label Text="• 3 papas sabaneras (rodajas gruesas)" TextColor="Black" />
+                    <Label Text="• 3 papas pastusas (rodajas gruesas)" TextColor="Black" />
+                    <Label Text="• 3 papas criollas (enteras y peladas)" TextColor="Black" />
+                    <Label Text="• 3 mazorcas partidas" TextColor="Black" />
+                    <Label Text="• 1 cebolla larga" TextColor="Black" />
+                    <Label Text="• 2 dientes de ajo" TextColor="Black" />
+                    <Label Text="• 1 ramo de guascas" TextColor="Black" />
+                    <Label Text="• 1 cubo de caldo de gallina (opcional)" TextColor="Black" />
+                    <Label Text="• Sal al gusto" TextColor="Black" />
+                    <Label Text="• Alcaparras, crema de leche, aguacate y arroz (acompañantes)" TextColor="Black" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- PREPARACIÓN -->
+            <Frame BackgroundColor="#FFCC80" CornerRadius="15" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="👨‍🍳 Preparación:"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           TextColor="#4E342E"
+                           Margin="0,0,0,10"/>
+
+                    <Label Text="1. Cocina las pechugas de pollo con la cebolla, ajo, sal y caldo." TextColor="Black" />
+                    <Label Text="2. Retira el pollo, desmenúzalo y reserva." TextColor="Black" />
+                    <Label Text="3. Agrega las papas y las mazorcas al caldo y cocina 40 minutos." TextColor="Black" />
+                    <Label Text="4. Remueve para lograr una textura espesa." TextColor="Black" />
+                    <Label Text="5. Añade el pollo y las guascas, y cocina 10 minutos más." TextColor="Black" />
+                    <Label Text="6. Sirve caliente con crema, alcaparras, aguacate y arroz blanco." TextColor="Black" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- IMAGEN FINAL -->
+            <Frame Padding="0"
+            CornerRadius="18"
+            HasShadow="True"
+            IsClippedToBounds="True"
+            BorderColor="#2E8B57">
+                <Image Source="https://imgs.search.brave.com/luKK3LhoJQbuTAkD7qdIFlvdp1GEHaM6Myk3FYimWFw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTg4/ODA5Njg1Ny9waG90/by90cmFkaXRpb25h/bC1jb2xvbWJpYW4t/YWppYWNvLWJvZ290/YS1jb2xvbWJpYS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/bmhqUG5oWWs1M3dZ/NjVhOWZfT1BTQ2N3/cjg5dDdRRXMwQ3Yy/NFZoNDJvOD0"
+                Aspect="AspectFill"
+                HeightRequest="240" />
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

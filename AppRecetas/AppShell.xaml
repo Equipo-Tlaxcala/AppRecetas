@@ -29,6 +29,9 @@
     <FlyoutItem Title="Alboniga Enchipotlada" Icon="icon.png">
         <ShellContent ContentTemplate="{DataTemplate views:RecetaAlbondigasEnchipotladas}" />
     </FlyoutItem>
+    <FlyoutItem Title="Ajiaco Santafereño" Icon="icon.png">
+        <ShellContent ContentTemplate="{DataTemplate views:AjiacoSantaferenoPage}" />
+    </FlyoutItem>
 
 
 </Shell>
