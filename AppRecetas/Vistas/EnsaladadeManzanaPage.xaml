@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRecetas.Vistas.EnsaladadeManzanaPage"
+             Title="Receta de Ensalada de Manzana"
+             BackgroundColor="#A8E6A3">
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="18" BackgroundColor="White" Margin="20" >
+
+           
+            <Label Text="Receta de Ensalada de Manzana"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   FontFamily="Cursive"
+                   TextColor="#33691E"
+                   HorizontalTextAlignment="Center" />
+
+            <Label Text="Para preparar:"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="#4CAF50" />
+
+            <Label Text="La ensalada de manzana es un platillo fresco y dulce que combina texturas crujientes y suaves, ideal para acompañar comidas o disfrutarse como postre. Su sabor característico es ligero y refrescante, resaltando la frescura natural de la manzana, lo que la convierte en una opción muy popular en diversas culturas. Es comúnmente apreciada por su equilibrio entre dulzura y acidez, ofreciendo una experiencia agradable al paladar."
+                   FontSize="16"
+                   TextColor="DarkGreen"
+                   HorizontalTextAlignment="Start" />
+
+            <Label Text="Ingredientes:"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="#2E7D32"
+                   Margin="0,10,0,0" />
+
+            <Label Text="• 4 manzanas rojas picadas" TextColor="Black" />
+            <Label Text="• 1 taza de crema" TextColor="Black" />
+            <Label Text="• 1/2 taza de leche condensada" TextColor="Black" />
+            <Label Text="• 1 taza de piña en almíbar" TextColor="Black" />
+            <Label Text="• 1/2 taza de nuez picada" TextColor="Black" />
+            <Label Text="• 1 taza de pasas" TextColor="Black" />
+
+            <Label Text="Instrucciones:"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="#2E7D32"
+                   Margin="0,10,0,0" />
+
+            <Label Text="1. Lava y pica las manzanas en cubos pequeños." TextColor="Black" />
+            <Label Text="2. Mezcla la crema con la leche condensada en un tazón grande." TextColor="Black" />
+            <Label Text="3. Agrega la piña, pasas, nueces y manzanas." TextColor="Black" />
+            <Label Text="4. Mezcla hasta integrar bien." TextColor="Black" />
+            <Label Text="5. Refrigera durante al menos 1 hora antes de servir." TextColor="Black" />
+
+            <Image Source="ensaladamanzana.png"
+                    HeightRequest="200"
+                    Aspect="AspectFit"
+                    Margin="0,20,0,0"
+                   HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
