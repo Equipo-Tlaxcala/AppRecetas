@@ -13,19 +13,25 @@
                    Padding="20"
                    CornerRadius="15"
                    HasShadow="True">
-                <VerticalStackLayout>
-                    <Label Text="Albóndigas Enchipotladas"
+               <VerticalStackLayout Spacing="10">
+                   <Label Text="Albóndigas Enchipotladas"
                            FontSize="30"
                            FontAttributes="Bold"
                            TextColor="White"
                            HorizontalTextAlignment="Center" />
 
                     <Label Text="Una receta mexicana con sabor casero"
-                           FontSize="16"
-                           TextColor="#D0F0E0"
-                           HorizontalTextAlignment="Center"
-                           FontAttributes="Italic" />
-                </VerticalStackLayout>
+                            FontSize="16"
+                            TextColor="#D0F0E0"
+                            HorizontalTextAlignment="Center"
+                            FontAttributes="Italic" />
+    
+                    <!-- Descripción extendida del platillo -->
+                    <Label Text="Las albóndigas enchipotladas son uno de esos platillos que saben a hogar. Se preparan con carne molida bien sazonada, moldeada en pequeñas bolitas que se doran ligeramente y luego se bañan en una salsa espesa de jitomate con chile chipotle, logrando un balance perfecto entre lo picosito y lo reconfortante. Esta receta, tradicional en muchos hogares mexicanos, es ideal para compartir en familia, acompañada de arroz blanco, frijoles o unas tortillas calientitas. No solo es deliciosa, también es sencilla de preparar y perfecta para cualquier ocasión, desde una comida de diario hasta un fin de semana con tus seres queridos."
+                           FontSize="14"
+                           TextColor="#E8F8F2"
+                           HorizontalTextAlignment="Center" />
+               </VerticalStackLayout>
             </Frame>
 
             <!-- Ingredientes en lista -->
