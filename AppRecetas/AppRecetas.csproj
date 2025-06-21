@@ -83,6 +83,9 @@
 	  <MauiXaml Update="Vistas\RecetaAlbondigasEnchipotladas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Vistas\SopaChampi.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRecetas.Vistas.SopaChampi"
+             Title="SopaChampi"
+             BackgroundColor="#F9F9F9">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <!-- Encabezado -->
+            <Frame BackgroundColor="#4B3621"
+                   Padding="20"
+                   CornerRadius="20"
+                   HasShadow="True">
+                <VerticalStackLayout>
+                    <Label Text="Zuppa di Funghi"
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center" />
+                    <Label Text="Sopa italiana cremosa de champiñones"
+                           FontSize="16"
+                           TextColor="#FFEBC1"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Italic" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Ingredientes -->
+            <Frame BackgroundColor="#DAD2C6"
+                   CornerRadius="15"
+                   Padding="15"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="🍄 Ingredientes"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#3E2C1C" />
+
+                    <CollectionView>
+                        <CollectionView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>1.5 oz de champiñones secos mixtos</x:String>
+                                <x:String>6 tazas de caldo de pollo o vegetal</x:String>
+                                <x:String>6 oz de cebolla blanca</x:String>
+                                <x:String>3 oz de puerro</x:String>
+                                <x:String>2 oz de echalote</x:String>
+                                <x:String>½ oz de ajo (2 dientes medianos)</x:String>
+                                <x:String>4 oz de apio</x:String>
+                                <x:String>2 cdas de aceite de oliva</x:String>
+                                <x:String>3 oz de panceta (opcional)</x:String>
+                                <x:String>8 oz de papas en cubos pequeños</x:String>
+                                <x:String>2 cdas de puré de tomate</x:String>
+                                <x:String>¼ taza de jerez seco o marsala</x:String>
+                                <x:String>Hierbas frescas: orégano o tomillo</x:String>
+                                <x:String>Sal y pimienta al gusto</x:String>
+                                <x:String>Pasta cocida o crutones para servir</x:String>
+                                <x:String>Parmesano y crème fraiche para decorar</x:String>
+                            </x:Array>
+                        </CollectionView.ItemsSource>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame BackgroundColor="White"
+                                       CornerRadius="10"
+                                       Padding="10"
+                                       Margin="0,5"
+                                       HasShadow="False">
+                                    <Label Text="{Binding}"
+                                           FontSize="15"
+                                           TextColor="#333" />
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Preparación -->
+            <Frame BackgroundColor="#EFEDE8"
+                   CornerRadius="15"
+                   Padding="15"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="👩‍🍳 Preparación"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#3E2C1C" />
+
+                    <CollectionView>
+                        <CollectionView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Remoja los champiñones secos en el caldo caliente por 30 minutos.</x:String>
+                                <x:String>Pica finamente cebolla, puerro, echalote, ajo y apio.</x:String>
+                                <x:String>En una olla, sofríe la panceta hasta que esté crujiente.</x:String>
+                                <x:String>Añade las verduras picadas y cocina 10 minutos.</x:String>
+                                <x:String>Agrega los champiñones, puré de tomate y papas. Cocina 5 minutos.</x:String>
+                                <x:String>Vierte el jerez y deja reducir a la mitad.</x:String>
+                                <x:String>Agrega el caldo colado (sin impurezas) y las hierbas. Cocina 20 min.</x:String>
+                                <x:String>Corrige sal y pimienta. Sirve con pasta o crutones.</x:String>
+                                <x:String>Opcional: licúa la sopa para una textura cremosa y decora con crème fraiche y parmesano.</x:String>
+                            </x:Array>
+                        </CollectionView.ItemsSource>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame BackgroundColor="White"
+                                       CornerRadius="10"
+                                       Padding="10"
+                                       Margin="0,5"
+                                       HasShadow="False">
+                                    <Label Text="{Binding}"
+                                           FontSize="15"
+                                           TextColor="#333" />
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Imagen final -->
+            <Frame Padding="0"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   IsClippedToBounds="True"
+                   BorderColor="#4B3621">
+                <Image Source="https://foragerchef.com/wp-content/uploads/2023/01/Italian-Mushroom-Soup-Zuppa-di-Funghi-3.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="240" />
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

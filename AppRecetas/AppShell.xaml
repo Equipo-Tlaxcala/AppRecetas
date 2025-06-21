@@ -32,6 +32,9 @@
     <FlyoutItem Title="Ajiaco Santafereño" Icon="icon.png">
         <ShellContent ContentTemplate="{DataTemplate views:AjiacoSantaferenoPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Sopa de Champiñones" Icon="icon.png">
+        <ShellContent ContentTemplate="{DataTemplate views:SopaChampi}" />
+    </FlyoutItem>
 
 
 </Shell>
