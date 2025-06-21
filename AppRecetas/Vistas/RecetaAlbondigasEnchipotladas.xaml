@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRecetas.Vistas.RecetaAlbondigasEnchipotladas"
+             Title="Albóndigas Enchipotladas"
+             BackgroundColor="#F0F8F6">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <!-- Encabezado con fondo jade -->
+            <Frame BackgroundColor="#2E8B57"
+                   Padding="20"
+                   CornerRadius="15"
+                   HasShadow="True">
+                <VerticalStackLayout>
+                    <Label Text="Albóndigas Enchipotladas"
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center" />
+
+                    <Label Text="Una receta mexicana con sabor casero"
+                           FontSize="16"
+                           TextColor="#D0F0E0"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Italic" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Ingredientes en lista -->
+            <Frame BackgroundColor="#A8D5BA"
+                   CornerRadius="12"
+                   Padding="15"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="🧂 Ingredientes"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#2E5C47" />
+
+                    <CollectionView>
+                        <CollectionView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>500g de carne molida</x:String>
+                                <x:String>1 huevo</x:String>
+                                <x:String>1/2 taza de pan molido</x:String>
+                                <x:String>1 diente de ajo picado</x:String>
+                                <x:String>Sal y pimienta al gusto</x:String>
+                                <x:String>4 jitomates</x:String>
+                                <x:String>2 chiles chipotles</x:String>
+                                <x:String>1/4 de cebolla</x:String>
+                                <x:String>1 taza de caldo de pollo</x:String>
+                                <x:String>Aceite para freír</x:String>
+                            </x:Array>
+                        </CollectionView.ItemsSource>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame BackgroundColor="White"
+                                       CornerRadius="8"
+                                       Padding="10"
+                                       Margin="0,5"
+                                       HasShadow="False">
+                                    <Label Text="{Binding}"
+                                           FontSize="16"
+                                           TextColor="#333" />
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Preparación paso a paso -->
+            <Frame BackgroundColor="#D1EEE1"
+                   CornerRadius="12"
+                   Padding="15"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="👨‍🍳 Preparación"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#2E5C47" />
+
+                    <CollectionView>
+                        <CollectionView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Mezcla la carne con huevo, pan molido, ajo, sal y pimienta. Forma bolitas.</x:String>
+                                <x:String>Fríelas ligeramente y reserva.</x:String>
+                                <x:String>Licúa jitomate, chipotle, cebolla y caldo. Cuela la mezcla.</x:String>
+                                <x:String>Cocina la salsa en una olla con un poco de aceite.</x:String>
+                                <x:String>Agrega las albóndigas a la salsa y cocina a fuego medio por 20 minutos.</x:String>
+                                <x:String>Sirve calientes con arroz blanco o tortillas.</x:String>
+                            </x:Array>
+                        </CollectionView.ItemsSource>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Frame BackgroundColor="White"
+                                       CornerRadius="8"
+                                       Padding="10"
+                                       Margin="0,5"
+                                       HasShadow="False">
+                                    <Label Text="{Binding}"
+                                           FontSize="16"
+                                           TextColor="#333" />
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Imagen al final -->
+            <Frame Padding="0"
+                   CornerRadius="18"
+                   HasShadow="True"
+                   IsClippedToBounds="True"
+                   BorderColor="#2E8B57">
+                <Image Source="https://cocinamia.com.mx/wp-content/uploads/2021/03/albondigas-1.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="240" />
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

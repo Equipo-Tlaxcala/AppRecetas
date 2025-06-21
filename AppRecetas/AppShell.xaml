@@ -26,6 +26,9 @@
     <FlyoutItem Title="Ensalada de Manzana" Icon="icon.png">
         <ShellContent ContentTemplate="{DataTemplate views:EnsaladadeManzanaPage}" />
     </FlyoutItem>
+    <FlyoutItem Title="Alboniga Enchipotlada" Icon="icon.png">
+        <ShellContent ContentTemplate="{DataTemplate views:RecetaAlbondigasEnchipotladas}" />
+    </FlyoutItem>
 
 
 </Shell>

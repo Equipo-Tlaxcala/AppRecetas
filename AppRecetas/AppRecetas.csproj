@@ -65,7 +65,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Vistas\RecetaAlbondigasEnchipotladas.xaml.cs">
+	    <DependentUpon>RecetaAlbondigasEnchipotladas.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Vistas\EnsaladadeManzanaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Vistas\RecetaAlbondigasEnchipotladas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
